@@ -11,26 +11,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--links dos arquivos adicionais-->
     <link rel="stylesheet" href="arquivos/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
 </head>
 <body>
     <header>
-        
+       
         <!--nav bar de mobile responsivo-->
         <button onclick="menu()"><img src="img/nav.png" alt=""></button>
         <nav id="mobile" class="off">
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#contato">CONTATO</a></li>
-                <li><p><a href="">ENTRAR</a></p></li>
+                <li><p onclick="login()"><a href="#">ENTRAR</a></p></li>
             </ul>
         </nav>
         <!--nav bar para desktop e tablets-->
         <nav id="desktop">
             <ul>
-                <li><a href="#home">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#sobre">SOBRE</a></li>
                 <li><a href="#contato">CONTATO</a></li>
             </ul>
@@ -100,7 +101,7 @@
             </div>
         </section>
         <!--seção contatos-->
-        <h3><a href="#" target="_blank" class="botao"> VER HORARIOS</a></h3>
+        <h3><a href="arquivos/planos.html" target="_blank" class="botao"> VER HORARIOS</a></h3>
         <section>
             <div class="text1">
                 <h3>Contato</h3>
@@ -120,7 +121,7 @@
         </section>
     </main>
     <!--fim do conteudo principal-->
-    <footer>
+    <footer id="contato">
         <!--rodapé do site-->
         <div>
             <h1>CM<img src="img/logo2.png" alt="">Life</h1>
@@ -132,7 +133,6 @@
             <p>&copy;2023 Clinica Médica Life - Todos os direitos reservados</p>
             <p>Desenvolvido por Herbert Souza</p>
         </div>
-      
     </footer>
 
     <script src="arquivos/script.js"></script>

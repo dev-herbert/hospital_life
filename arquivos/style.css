@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 header img{
     width: 25px;
@@ -25,9 +26,14 @@ header{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font: 400 18px 'sans';
+    transition: all .70s;
 }
 #mobile, header button{
     display: none;
+}
+#desktop ul li a:hover{
+    color: black;
+    transition: all .70s;
 }
 .off{
     visibility: hidden;
@@ -47,7 +53,7 @@ header{
     align-items: center;
 }
 .banner h1{
-    font: 600 55px 'Arial';
+    font: 600 55px 'Source Sans Pro', sans-serif;
     color: white;
     width: 60%;
 }
@@ -56,7 +62,7 @@ header{
      width: 70%;
     margin: 20px auto;
     text-align: center;
-    font: normal 14pt 'Arial';
+    font: normal 14pt 'Source Sans Pro', sans-serif;
     line-height: 32px;
 }
 .text1 a{
@@ -71,7 +77,7 @@ header{
     justify-content: center;
 }
 span{
-    font: 300 18pt 'Arial';
+    font: 300 18pt 'Source Sans Pro', sans-serif;
     color: rgb(85, 85, 85);
 }
 .lista ul{
@@ -82,7 +88,7 @@ span{
 }
 .lista ul li{
     padding: 2px 0;
-    font: 100 14pt 'Arial';
+    font: 100 14pt 'Source Sans Pro', sans-serif;
 }
 .container-expecialistas{
     display: flex;
@@ -105,7 +111,7 @@ span{
 .box p{
     margin: 15px auto;
     text-align: center;
-    font: 400 16pt 'Arial';
+    font: 400 16pt 'Source Sans Pro', sans-serif;
 }
 h3 a{
     background-color: rgb(31, 190, 252);
@@ -157,6 +163,13 @@ footer img{
     width: 25px;
 }
 @media(max-width: 650px){
+    #nav-guia a{
+        font-size: 8pt;
+        font-weight: 500;
+    }
+    #nav-guia{
+        gap: 5px;
+    }
     header{
         display: flex;
         flex-flow: row wrap;
@@ -174,7 +187,8 @@ footer img{
     #mobile{
         display: inline-block;
         width: 280px;
-        height: 50vh;
+        height: 70vh;
+        overflow-y: scroll;
         border-radius: 20px;
         background-color: rgb(131, 129, 129);
         position: absolute;
@@ -190,7 +204,7 @@ footer img{
         color: black;
         text-decoration: none;
         display: block;
-        font: 500 18px 'Arial';
+        font: 500 18px 'Source Sans Pro', sans-serif;
     }
     #mobile ul li a:hover{
         background-color: rgb(141, 141, 239);
@@ -217,7 +231,7 @@ footer img{
     }
     .banner div h1{
         width: 90%;
-        font: 700 24pt normal;
+        font: 700 24pt 'Source Sans Pro', sans-serif;
     }
     .text, .text1{
         width: 95%;
@@ -237,30 +251,28 @@ footer img{
    }
    .container-sobre{
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     }
     span{
-    font: 300 16pt 'Arial';
+    font: 300 16pt 'Source Sans Pro', sans-serif;
     color: rgb(85, 85, 85);
     }
     .lista ul{
     margin-top: 20px;
     }
     .container-sobre img{
-    width: 200px;
+    display: none;
     }
     .lista ul li{
     padding: 2px 0;
-    font: 100 11pt 'Arial';
+    font: 100 11pt 'Source Sans Pro', sans-serif;
     }
     footer{
         height: 50vh;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
     }
-}
-@media(min-width: 651px) and (max-width: 1024){
-   
 }
